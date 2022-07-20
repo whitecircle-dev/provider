@@ -67,6 +67,19 @@ typedef ProxyProviderBuilder6<T, T2, T3, T4, T5, T6, R> = R Function(
   R? previous,
 );
 
+// ignore: public_member_api_docs
+typedef ProxyProviderBuilder7<T, T2, T3, T4, T5, T6, T7, R> = R Function(
+  BuildContext context,
+  T value,
+  T2 value2,
+  T3 value3,
+  T4 value4,
+  T5 value5,
+  T6 value6,
+  T7 value7,
+  R? previous,
+);
+
 /// {@macro provider.proxyprovider}
 class ProxyProvider0<R> extends InheritedProvider<R> {
   /// Initializes [key] for subclasses.

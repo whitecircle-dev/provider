@@ -361,3 +361,26 @@ class ChangeNotifierProxyProvider6<T, T2, T3, T4, T5, T6,
           child: child,
         );
 }
+
+/// {@macro provider.changenotifierproxyprovider}
+class ChangeNotifierProxyProvider7<T, T2, T3, T4, T5, T6, T7,
+        R extends ChangeNotifier?>
+    extends ListenableProxyProvider7<T, T2, T3, T4, T5, T6, T7, R> {
+  /// Initializes [key] for subclasses.
+  ChangeNotifierProxyProvider7({
+    Key? key,
+    required Create<R> create,
+    required ProxyProviderBuilder7<T, T2, T3, T4, T5, T6, T7, R> update,
+    bool? lazy,
+    TransitionBuilder? builder,
+    Widget? child,
+  }) : super(
+          key: key,
+          create: create,
+          update: update,
+          dispose: ChangeNotifierProvider._dispose,
+          lazy: lazy,
+          builder: builder,
+          child: child,
+        );
+}

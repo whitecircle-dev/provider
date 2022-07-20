@@ -278,3 +278,37 @@ class ListenableProxyProvider6<T, T2, T3, T4, T5, T6, R extends Listenable?>
           child: child,
         );
 }
+
+
+/// {@macro provider.listenableproxyprovider}
+class ListenableProxyProvider7<T, T2, T3, T4, T5, T6,T7, R extends Listenable?>
+    extends ListenableProxyProvider0<R> {
+  /// Initializes [key] for subclasses.
+  ListenableProxyProvider7({
+    Key? key,
+    Create<R>? create,
+    required ProxyProviderBuilder7<T, T2, T3, T4, T5, T6,T7, R> update,
+    Dispose<R>? dispose,
+    bool? lazy,
+    TransitionBuilder? builder,
+    Widget? child,
+  }) : super(
+    key: key,
+    create: create,
+    lazy: lazy,
+    builder: builder,
+    update: (context, previous) => update(
+      context,
+      Provider.of(context),
+      Provider.of(context),
+      Provider.of(context),
+      Provider.of(context),
+      Provider.of(context),
+      Provider.of(context),
+      Provider.of(context),
+      previous,
+    ),
+    dispose: dispose,
+    child: child,
+  );
+}
