@@ -11,7 +11,8 @@ export 'src/change_notifier_provider.dart'
         ChangeNotifierProxyProvider3,
         ChangeNotifierProxyProvider4,
         ChangeNotifierProxyProvider5,
-        ChangeNotifierProxyProvider6;
+        ChangeNotifierProxyProvider6,
+        ChangeNotifierProxyProvider7;
 export 'src/consumer.dart'
     show Consumer, Consumer2, Consumer3, Consumer4, Consumer5, Consumer6;
 export 'src/listenable_provider.dart'
